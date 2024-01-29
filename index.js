@@ -41,7 +41,7 @@ for (let pageNumber = 0; pageNumber < 1000; pageNumber += 25) {
           Link: link,
           Description: "",
           Level: "",
-          KsaDescription: "", // initialize description to empty string
+          JobDescription: "",
           DatePosted: "",
           scrappedDate: today,
         });
@@ -93,7 +93,7 @@ for (let pageNumber = 0; pageNumber < 1000; pageNumber += 25) {
                 ksaDescription += $(li).text().trim() + "\n";
               });
             });
-            job.KsaDescription = ksaDescription;
+            job.JobDescription = ksaDescription;
 
             const datePostedElement = $(
               "span.posted-time-ago__text.topcard__flavor--metadata"
